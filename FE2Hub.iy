@@ -1,0 +1,16 @@
+local Plugin = {
+    ["PluginName"] = "FE2 Hub",
+    ["PluginDescription"] = "Loads the Flood Escape 2 Hub into your game.",
+    ["Commands"] = {
+                ["FE2 Hub"] = {
+            ["ListName"] = "FE2 Hub",
+            ["Description"] = "Loads the Flood Escape 2 Hub into your game.",
+            ["Aliases"] = {'fe2'},
+            ["Function"] = function(args,speaker)
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Zygregaard/Pastebin/main/FE2%20Hub"))()
+            end
+        }
+    }
+}
+
+return Plugin
